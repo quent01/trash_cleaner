@@ -57,9 +57,10 @@ if [ -d $PATH_TO_CLEAN ]; then
     done
 
     if [ -x "$(command -v mail)" ]; then
-        mail -s "${MAIL_SUBJECT}" $MAIL_NOTIFICATION <<< $MAIL_TXT
+        cat $MAIL_TXT | mail -s "${MAIL_SUBJECT}" $MAIL_NOTIFICATION
     else
         alert_error "Mail with result could not be send because mailutils is not installed"
+        cat $MAIL_TXT
     fi
 
 else
