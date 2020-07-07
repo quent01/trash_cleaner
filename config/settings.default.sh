@@ -15,6 +15,7 @@ TRASHES[6]="adminer.php"
 TRASHES[7]="dploy.yaml"
 TRASHES[8]="srdb.cli.php"
 TRASHES[9]="bigdump.php"
+TRASHES[10]="backdoor.php"
 
 MAIL_SUBJECT="Trash cleaner"
 MAIL_NOTIFICATION="tech@tiz.fr"
